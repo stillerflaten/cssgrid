@@ -8,11 +8,11 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.4fr;
     grid-template-areas: 
     "nav nav nav nav"
     "sidebar main main main"
-    "sidebar content1 content2 content3"
+    "sidebar main main main"
     "sidebar footer footer footer";
     grid-gap: 0.2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -20,52 +20,38 @@
     text-transform: uppercase;
     font-size: 12px;
     color: slategrey;
+    text-align: center;
 }
 
 nav {
-    background-color: aqua;
+    background-color: antiquewhite;
     grid-area: nav;
     border-radius: var (--main-radius);
     padding-top: var(--main-padding);
 }
 
 main {
-    background-color: aquamarine;
+    background-color: darkgoldenrod;
+    background-image: url(img/Kaizer_062bokeh.jpg);
+    background-size: cover;
+    color: antiquewhite;
     grid-area: main;
     border-radius: var (--main-radius);
-    padding-top: var(--main-padding);
+   padding: 30px 40px 30px 20px;
+    text-align: left;
 }
 
 #sidebar {
     background-color: antiquewhite;
+    background-image: url(img/background_pattern.jpeg);
+    background-repeat: repeat;
     grid-area: sidebar;
     border-radius: var (--main-radius);
     padding-top: var(--main-padding);
 }
 
-#content1 {
-    background-color: aliceblue;
-    grid-area: content1;
-    border-radius: var (--main-radius);
-    padding-top: var(--main-padding);
-}
-
-#content2 {
-    background-color: beige;
-    grid-area: content2;
-    border-radius: var (--main-radius);
-    padding-top: var(--main-padding);
-}
-
-#content3 {
-    background-color: cadetblue;
-    grid-area: content3;
-    border-radius: var (--main-radius);
-    padding-top: var(--main-padding);
-}
-
 footer {
-    background-color: darkcyan;
+    background-color: antiquewhite;
     grid-area: footer;
     border-radius: var (--main-radius);
     padding-top: var(--main-padding);
@@ -85,3 +71,33 @@ footer {
         "footer";
     }
 }
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+ul li a {
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #3a3a3a;
+    display: inline-block;
+}
+
+li a::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 0;
+    background: wheat;
+    transition: all .5s;
+}
+
+li a:hover::after {
+    width: 100%;
+}
+
+
+
