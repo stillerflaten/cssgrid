@@ -37,7 +37,7 @@ main {
     color: antiquewhite;
     grid-area: main;
     border-radius: var (--main-radius);
-   padding: 30px 40px 100px 20px;
+    padding: 30px 40px 100px 20px;
     text-align: left;
 
 }
