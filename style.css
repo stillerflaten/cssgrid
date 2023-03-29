@@ -37,7 +37,7 @@ main {
     color: antiquewhite;
     grid-area: main;
     border-radius: var (--main-radius);
-    padding: 30px 40px 100px 20px;
+    padding: 30px 40px 200px 20px;
     text-align: left;
 
 }
@@ -85,6 +85,10 @@ li a:hover::after {
     width: 100%;
 }
 
+.loggfor{
+    font-size: 25px;
+}
+
 .instagram {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -98,7 +102,7 @@ li a:hover::after {
 @media only screen and (max-width:550px){
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 1.4fr 3fr 0.5fr;
+        grid-template-rows: 0.4fr 1.4fr 3fr 1fr;
         grid-template-areas: 
         "nav"
         "sidebar"
